@@ -466,22 +466,18 @@ html[dir='ltr'] .newsletter-input {
 }
 
 .newsletter-input::-webkit-input-placeholder {
-  text-align: right;
   color: #7b7b7b;
 }
 
 .newsletter-input:-ms-input-placeholder {
-  text-align: right;
   color: #7b7b7b;
 }
 
 .newsletter-input::-ms-input-placeholder {
-  text-align: right;
   color: #7b7b7b;
 }
 
 .newsletter-input::placeholder {
-  text-align: right;
   color: #7b7b7b;
 }
 
@@ -2689,15 +2685,19 @@ html[dir='rtl'] .close-menu {
     right: auto;
   }
   nav .top-settings {
-    display: none !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     position: absolute;
     top: 19px;
   }
   html[dir='ltr'] nav .top-settings {
     left: 19px;
+    margin: 0;
   }
   html[dir='rtl'] nav .top-settings {
     right: 19px;
+    margin: 0;
   }
   nav .top-setting .setting-anchor {
     font-weight: 500;
